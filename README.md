@@ -1,4 +1,5 @@
 # Bunny
+[![work-in-progress](https://img.shields.io/badge/status-work--in--progress-red.svg)](http://github.com/efcasado/bunny)
 
 Supervised RabbitMQ (hereinafter referred to as RMQ) channels and
 connections.
@@ -20,6 +21,9 @@ the channel until it succeeds or the channel is explicitly closed.
 
 - If the owner of a channel goes down (i.e. the process who openned the
 channel), Bunny takes care of terminating the channel owned by that process.
+
+- If a Bunny connection goes down, Bunny takes care of terminating all
+Bunny channels associated to it.
 
 
 ## Author(s)
